@@ -248,7 +248,7 @@ bool hybridset::is_natural_subset_of(hybridset a) {
                return this->count(x) >= 0;
            });
 }
-/*Phần bù của một tập hợp cho trước trên một tập hợp kia*/
+/*Phần bù của hybridset trên một tập hợp cho trước*/
 hybridset hybridset::complement_of(hybridset a) {
     if (this->is_natural_subset_of(a)) {
         return a - *this;
